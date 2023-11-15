@@ -18,4 +18,5 @@ WORKDIR /postgresql-client
 
 USER postgresql-client
 
-ENTRYPOINT ["psql","$POSTGRES_URI","-c","$POSTGRES_COMMAND"]
+ENTRYPOINT ["echo","$POSTGRES_URI"]
+#ENTRYPOINT ["psql","$POSTGRES_URI","-c","$POSTGRES_COMMAND"]
