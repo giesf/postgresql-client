@@ -7,9 +7,6 @@ on:
     branches:
       - main
 
-  schedule:
-    - cron: 0 0 * * 0
-
 jobs:
 
   dockerhub:
@@ -18,7 +15,7 @@ jobs:
 
     env:
       CONTAINER_REGISTRY: docker.io
-      CONTAINER_REPOSITORY: andreswebs/postgresql-client
+      CONTAINER_REPOSITORY: u8friedrich/postgresql-client
       IMAGE_TAG: ${{ github.sha }}
       IMAGE_DEFAULT_TAG: latest
 
