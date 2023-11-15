@@ -18,3 +18,4 @@ WORKDIR /postgresql-client
 
 USER postgresql-client
 
+ENTRYPOINT ["/bin/bash"]
